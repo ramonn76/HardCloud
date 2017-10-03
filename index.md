@@ -16,7 +16,7 @@ vectorization pass developed specifically to exploit the vector
 instructions available in OpenCL. This whole process is transparent
 and does not require any programmer intervention.
 
-## How it works
+## How it work
 
 The version 4.0 of the  OpenMP standard introduces new directives that
 enable the transfer of  computation to heterogeneous computing devices

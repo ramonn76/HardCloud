@@ -31,29 +31,14 @@ Transpose” (mvt) program of the Polybench benchmark suite after they
 have been annotated with OpenMP 4.0 pragmas:
 
 {% highlight C %}
-// Problem size
-#define N 8192
 
-void mvt_gpu(float* a, float* x1, float* x2,
-                       float* y1, float* y2)
-{
-  int i,j;
-
-  #pragma omp target data device(GPU) map(to: a[ :N*N])
+  #pragma omp target device(HARPSIM) map(to: A) map(from: B)
+  #pragma omp parallel for use(hrw) module(loopback)
+  for (int i = 0; i < NI; i++)
   {
-    #pragma omp target map(to: y1[:N]) map(tofrom: x1[:N])
-    #pragma omp parallel for simd
-    for (i=0; i<N; i++)
-      for (j=0; j<N; j++)
-        x1[i] = x1[i] + a[i*N + j] * y1[j];
-
-    #pragma omp target map(to: y2[:N]) map(tofrom: x2[:N])
-    #pragma omp parallel for simd
-    for (i=0; i<N; i++)
-      for (j=0; j<N; j++)
-        x2[i] = x2[i] + a[j*N + i] * y2[j];
+    B[i] = A[i];
   }
-}
+
 {% endhighlight %}
 
 In the first loop the program computes the matrix vector

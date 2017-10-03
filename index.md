@@ -1,4 +1,8 @@
-
+---
+layout: page
+title: AClang
+permalink: /
+---
 
 ACLang is an open source LLVM Clang based compiler that implements the
 OpenMP Accelerator Model. It adds a new runtime library to LLVM/CLang
@@ -12,7 +16,7 @@ vectorization pass developed specifically to exploit the vector
 instructions available in OpenCL. This whole process is transparent
 and does not require any programmer intervention.
 
-## How it work
+## How it works
 
 The version 4.0 of the  OpenMP standard introduces new directives that
 enable the transfer of  computation to heterogeneous computing devices

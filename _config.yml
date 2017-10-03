@@ -18,9 +18,9 @@ description: Heterogeneous Computing Made Easy!
 #
 
 # Includes an icon in the footer for each username you enter
-##footer-links:
+footer-links:
  ## dribbble:
- ## email: contact@aclang.org
+  email: contact@aclang.org
  ## facebook:
  ## flickr:
  ## github: omp2ocl

@@ -16,7 +16,7 @@ computation to the HARP2 platform or, for debug purpose, to an emulator.
 The following example shows the syntax that was adopted. The HARPSIM keyword indicates that the execution will be
 permoformed by the emulator. Optionally to HARPSIM, there is the HARP keyword that instructs the HardCloud
 to generate code for the real HARP instead of the emulator. The map(:to) clausule indicates the data that will be
-sent to the accelerator, while the map(:from) indicates that will be get from the accelerator as a result.
+sent to the accelerator, while the map(:from) indicates the data that will be get from the accelerator as a result.
 the module clausule(loopback) indicates the bitstream to configure the FPGA.
 
 
@@ -32,12 +32,9 @@ the module clausule(loopback) indicates the bitstream to configure the FPGA.
 {% endhighlight %}
 
 
-You can look at [Unibench](https://github.com/omp2ocl/Unibench)
-repository if you want to see more examples.
-
 ## Screencast Demo
 
-Here is a recorded video demonstrating cloud offloading from a simple laptop to a Spark cluster created on Amazon Web Service.
+Here is a recorded video demonstrating how to use the HardCloud.
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/hds4YRkGIDY?rel=0" frameborder="0" allowfullscreen></iframe>

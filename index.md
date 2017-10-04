@@ -4,6 +4,8 @@ title: HardCloud
 permalink: /
 ---
 
+The computing industry has recently proposed the usage of  FPGAs as a way to improve energy efficiency in modern cloud clusters. Unfortunately, using such FPGA clusters  is a very hard and complex task. In this talk we propose a novel and simple mechanism to offload computation to  the FPGAs available in the  Intel HARP2 architecture, by extending OpenMP directives in such a way that the FPGA becomes just another OpenMP acceleration device that can be used directly from any user program.
+
 HardCloud is an open source LLVM Clang based compiler that implements the
 OpenMP Accelerator Model. It adds a new runtime library to LLVM/CLang
 that supports OpenMP offloading to accelerators like GPUs. Kernel

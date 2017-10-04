@@ -36,7 +36,7 @@ Here is a recorded video demonstrating cloud offloading from a simple laptop to 
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" width="560" height="315"
-    src="https://www.youtube.com/watch?v=FM3dlheCteA" frameborder="0"
+    src="https://youtu.be/Qw35o-BUH9Q" frameborder="0"
     allowfullscreen="">
   </iframe>
 </div>

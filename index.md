@@ -11,8 +11,10 @@ The computing industry has recently proposed the usage of  FPGAs as a way to imp
 The version 4.0 of the  OpenMP standard introduces new directives that
 enable the transfer of  computation to heterogeneous computing devices
 (e.g.  GPUs  or  DSP).  We  use this  programming  model  to  transfer
-computation to the HARP2 platform or, optionally, to an emulator in order to debug.
-The following example shows how ACLang works from a programmer perspective
+computation to the HARP2 platform or, for debug purpose, to an emulator.
+
+The following example shows the syntax that was adopted. The HARPSIM keyword indicates that the execution will be
+permoformed by the emulator. 
 
 {% highlight C %}
 

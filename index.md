@@ -40,10 +40,7 @@ repository if you want to see more examples.
 Here is a recorded video demonstrating cloud offloading from a simple laptop to a Spark cluster created on Amazon Web Service.
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" width="560" height="315"
-    src="https://www.youtube.com/embed/R5UhzOVrohU" frameborder="0"
-    allowfullscreen="">
-  </iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hds4YRkGIDY?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Documentation, Installation, Configuration

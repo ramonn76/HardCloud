@@ -4,16 +4,15 @@ title: HardCloud
 permalink: /
 ---
 
-The computing industry has recently proposed the usage of  FPGAs as a way to improve energy efficiency in modern cloud clusters. Unfortunately, using such FPGA clusters  is a very hard and complex task. In this talk we propose a novel and simple mechanism to offload computation to  the FPGAs available in the  Intel HARP2 architecture, by extending OpenMP directives in such a way that the FPGA becomes just another OpenMP acceleration device that can be used directly from any user program.
+The computing industry has recently proposed the usage of  FPGAs as a way to improve performance and energy efficiency in modern cloud clusters. Unfortunately, using such FPGA clusters  is a very hard and complex task. In this context we present HardCloud a novel and simple mechanism to offload computation to  the FPGAs available in the  Intel HARP2 platform, by extending OpenMP directives in such a way that the FPGA becomes just another OpenMP acceleration device that can be used directly from any user program. HardCloud is a subproject of [AClang](aclang.org).
 
 ## How it work
 
 The version 4.0 of the  OpenMP standard introduces new directives that
 enable the transfer of  computation to heterogeneous computing devices
 (e.g.  GPUs  or  DSP).  We  use this  programming  model  to  transfer
-computation to  an accelerator  that supports  OpenCL 1.2  or greater,
-giving  to   the  programmer  the   ability  to  quickly   expand  the
-computational power exploring their target devices.
+computation to the HARP2 platform or, optionally, to an emulator in order to debug.
+The following example shows how ACLang works from a programmer perspective
 
 {% highlight C %}
 

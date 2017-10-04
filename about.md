@@ -4,16 +4,15 @@ title: About
 permalink: /about/
 ---
 
-AClang is a research project conducted at the University of Campinas
+HardCloud is a research project conducted at the University of Campinas
 ([IC-UNICAMP](http://ic.unicamp.br/)) in Brazil. It is based on the
 open-source LLVM/Clang compiler framework and implements
-the OpenMP 4.0 Accelerator Programming Model. ACLang automatically
-converts OpenMP annotated program regions into OpenCL/SPIR kernels,
-while providing a set of polyhedral based optimizations like tiling
-and vectorization. OpenCL kernels resulting from ACLang can be
-executed on any OpenCL/SPIR compatible acceleration device, not only
-GPUs, but also FPGA accelerators like those found in the Intel HARP
-architecture.
+the OpenMP 4.0 Accelerator Programming Model. Harp2 is a subproject
+of [AClang](https://omp2ocl.github.io/aclang/), it is novel and simple
+mechanism to offload computation to the FPGAs available in the Intel
+HARP2 platform, by extending OpenMP directives in such a way that the
+FPGA becomes just another OpenMP acceleration device that can be used
+directly from any user program.
 
 ### Contact us
 

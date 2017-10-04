@@ -15,9 +15,9 @@ computation to the HARP2 platform or to an emulator (for debug purpose).
 
 The following example shows the syntax that was adopted. The HARPSIM keyword indicates that the execution will be
 permoformed by the emulator. Optionally to HARPSIM, there is the HARP keyword that instructs the HardCloud
-to generate code for the real HARP instead of the emulator. The map(:to) clausule indicates the data that will be
+to generate code for the real HARP instead of the emulator. The map(:to) clause indicates the data that will be
 sent to the accelerator, while the map(:from) indicates the data that will be get from the accelerator as a result.
-the module clausule(loopback) indicates the bitstream to configure the FPGA.
+the module clause(loopback) indicates the bitstream to configure the FPGA.
 
 
 {% highlight C %}

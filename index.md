@@ -1,10 +1,10 @@
 ---
 layout: page
-title: AClang
+title: HardCloud
 permalink: /
 ---
 
-ACLang is an open source LLVM Clang based compiler that implements the
+HardCloud is an open source LLVM Clang based compiler that implements the
 OpenMP Accelerator Model. It adds a new runtime library to LLVM/CLang
 that supports OpenMP offloading to accelerators like GPUs. Kernel
 functions are extracted from OpenMP annotated regions and are

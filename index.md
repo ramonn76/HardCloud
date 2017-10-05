@@ -42,14 +42,14 @@ synthesized to a hardware bitstream that will configure the FPGA, all automatica
 
 {% highlight C %}
 #pragma omp target device(HARP)
-  #pragma omp target map(to: A\[:N*N], B\[:N*N]) map(from: C\[:N*N])
+  #pragma omp target map(to: A[:N*N], B[:N*N]) map(from: C[:N*N])
   // Convert loop to OpenCL and then to  Verilog and synthesize
   #pragma omp parallel for use(hrw) synthesize(matmul)
   for(int i=0; i < N; ++i)
     for (int j = 0; j < N; ++j){
-      C\[i * N + j] = 0;
+      C[i * N + j] = 0;
       for (int k = 0; k < N; ++k)
-        C\[i * N + j] += A\[i * N + k] * B\[k * N + j];
+        C[i * N + j] += A[i * N + k] * B[k * N + j];
     }
 {% endhighlight %}
 ## Screencast Demo

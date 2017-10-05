@@ -14,12 +14,12 @@ enable the transfer of  computation to heterogeneous computing devices
 computation to the HARP2 platform or to an emulator (for debug purpose).
 
 The following example shows the syntax that was adopted. The *device(HARPSIM)*
-clause indicates that the execution will be performed by the emulator.
+clause indicates that the execution will be performed by the HARP2 emulator.
 Optionally to HARPSIM, one can use the HARP device that instructs the
 HardCloud to generate code for the real HARP instead of for the emulator.
 The *map(:to)* clause indicates the data that will be sent to the accelerator,
 while the *map(:from)* indicates the data that will be get from the accelerator as a result. 
-The clause *use(hrw)* especifies that the following code block will use a pre-designed hardware module. Finally, the clause *module(loopback)* indicates the hardware bitstream to configure the FPGA.
+The clause *use(hrw)* especifies that the following code block will use a pre-designed hardware module (loopback) to do the computation instead of the C code following the annotation. Finally, the clause *module(loopback)* indicates the hardware bitstream to configure the FPGA.
 
 
 {% highlight C %}
@@ -35,10 +35,8 @@ The clause *use(hrw)* especifies that the following code block will use a pre-de
 {% endhighlight %}
 
 
-Another way to use HardCloud is through the clause *synthesize()*. In the following sample, instead of the
-clause *module()*, specifying a pre-designed hardware module, we have the clause *synthesize()*. That means that
-the code beneath the pragma *parallel for*, in this case a matrix multiplication, will be converted to an OpenCL code and then to a Verilog code and, finally,
-synthesized to a hardware bitstream that will configure the FPGA, all automatically. 
+
+Instead of using the *module* clause, to specify a pre-designed hardware module, a programmer can  use the HardCloud *synthesize* clause to generate a new bitstream starting from C code. For example, by using the synthesize clause in the following annotated code,  a C code  matrix multiplication  can be converted to OpenCL, followed to Verilog and finally synthesized as a hardware bitstream using the  Intel FPGA SDK for OpenCL. HardCloud takes the resulting bitstream, automatically  configures the HARP2 FPGA and finally runs the application.
 
 {% highlight C %}
 #pragma omp target device(HARP)

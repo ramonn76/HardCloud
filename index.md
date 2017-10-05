@@ -35,7 +35,7 @@ The clause *use(hrw)* especifies that the following code block will use a pre-de
 {% endhighlight %}
 
 
-Another way to use HardCloud is through the clause *synthesize()*. In the follow sample, instead of the
+Another way to use HardCloud is through the clause *synthesize()*. In the following sample, instead of the
 clause *module()*, specifying a pre-designed hardware module, we have the clause *synthesize()*. That means that
 the code beneath the pragma *parallel for*, in this case a matrix multiplication, will be converted to an OpenCL code and then to a Verilog code and, finally,
 synthesized to a hardware bitstream that will configure the FPGA, all automatically. 

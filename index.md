@@ -35,6 +35,22 @@ The clause *use(hrw)* especifies that the following code block will use a pre-de
 {% endhighlight %}
 
 
+Another way to use HardCloud is through the clause *synthesize()*. In the follow sample, instead of the
+clause *module()*, specifying a pre-designed hardware module, we have the clause *synthesize()*. That means that
+the code beneath the pragma *parallel for*, in this case a matrix multiplication, will be converted to an OpenCL code and then to a Verilog code and, finally,
+synthesized to a hardware bitstream that will configure the FPGA, all automatically. 
+{% highlight C %}
+#pragma omp target device(HARP)
+  #pragma omp target map(to: A\[:N*N], B\[:N*N]) map(from: C\[:N*N])
+  // Convert loop to OpenCL and then to  Verilog and synthesize
+  #pragma omp parallel for use(hrw) synthesize(matmul)
+  for(int i=0; i < N; ++i)
+    for (int j = 0; j < N; ++j){
+      C\[i * N + j] = 0;
+      for (int k = 0; k < N; ++k)
+        C\[i * N + j] += A\[i * N + k] * B\[k * N + j];
+    }
+{% endhighlight %}
 ## Screencast Demo
 
 Here is a recorded a video demonstrating how to use the HardCloud.

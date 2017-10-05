@@ -18,7 +18,7 @@ clause indicates that the execution will be performed by the HARP2 emulator.
 Optionally to HARPSIM, one can use the HARP device that instructs the
 HardCloud to generate code for the real HARP instead of for the emulator.
 The *map(:to)* clause indicates the data that will be sent to the accelerator,
-while the *map(:from)* indicates the data that will be get from the accelerator as a result. 
+while the *map(:from)* indicates the data that will be received from the accelerator as a result. 
 The clause *use(hrw)* specifies that the annotated code block will use a pre-designed hardware module (loopback) to do the computation instead of the C code following the annotation.
 {% highlight C %}
 

@@ -53,7 +53,7 @@ Instead of using the *module* clause, to specify a pre-designed hardware module,
 Here is a recorded a video demonstrating how to use the HardCloud.
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/hds4YRkGIDY?rel=0" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://drive.google.com/file/d/0B1FRkn4nWz2hNnhZekFKeFUyTEk/preview" width="640" height="480"></iframe>
 </div>
 
 ## Documentation, Installation, Configuration

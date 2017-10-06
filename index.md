@@ -15,7 +15,7 @@ computation to the HARP2 platform or to an HARP2 emulator (for debug purpose).
 This can be done using two modes as described below:(1) Offloading a pre-synthesized
 module; and (2) Using HardCloud to synthesize C and offload the resulting module.
 
-### teste
+### Offloading a pre-synthesized module
 
 The following example shows the syntax that was adopted. The *device(HARPSIM)*
 clause indicates that the execution will be performed by the HARP2 emulator.
@@ -36,7 +36,7 @@ The clause *use(hrw)* specifies that the annotated code block will use a pre-des
 
 {% endhighlight %}
 
-
+### Using HardCloud to synthesize C and offload the resulting module
 
 Instead of using the *module* clause, to specify a pre-designed hardware module, a programmer can  use the HardCloud *synthesize* clause to generate a new bitstream starting from C code. For example, by using the synthesize clause in the following annotated code,  a C code  matrix multiplication  can be converted to OpenCL, followed to Verilog and finally synthesized as a hardware bitstream using the  Intel FPGA SDK for OpenCL. HardCloud takes the resulting bitstream, automatically  configures the HARP2 FPGA and finally runs the application.
 

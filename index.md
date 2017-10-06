@@ -12,7 +12,7 @@ The version 4.0 of the  OpenMP standard introduces new directives that
 enable the transfer of  computation to heterogeneous computing devices
 (e.g.  GPUs  or  DSP).  We  use this  programming  model  to  transfer
 computation to the HARP2 platform or to an HARP2 emulator (for debug purpose).
-This can be done using two modes as described below:(1) Offloading a pre-synthesized
+This can be done using two modes as described below: (1) Offloading a pre-synthesized
 module; and (2) Using HardCloud to synthesize C and offload the resulting module.
 
 ### Offloading a pre-synthesized module

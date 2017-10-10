@@ -23,15 +23,13 @@ Here is a video demonstrating how to use the HardCloud for a pre-defined bitstre
 </div>
 
 {% highlight C %}				
-   #pragma omp target device(HARPSIM)\
-   map(to: A) map(from: B)		
-   #pragma omp parallel for use(hrw)\
-   module(loopback)		
+#pragma omp target device(HARPSIM) map(to: A) map(from: B)		
+ #pragma omp parallel for use(hrw) module(loopback)		
    // Code that represents the loopback bitstream		
    for (int i = 0; i < NI; i++)		
    {		
      B[i] = A[i];		
-  }
+   }
 {% endhighlight %}
 
 The example above shows the syntax that was adopted. As said in the video, the *map(:to)* clause indicates

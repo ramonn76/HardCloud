@@ -32,7 +32,7 @@ Here is a video demonstrating how to use the HardCloud for a pre-defined bitstre
      B[i] = A[i];		
   }
 
-The Example above shows the syntax that was adopted. As said in the video, the *map(:to)* clause indicates
+The example above shows the syntax that was adopted. As said in the video, the *map(:to)* clause indicates
 the data that will be sent to the accelerator, while the *map(:from)* indicates the data that will be received from the accelerator as a result. The clause *use(hrw)* specifies that the annotated code block will use a pre-designed hardware, for example module (loopback), to do the computation instead of the C code following the annotation. The *device(HARPSIM)* clause indicates that the execution will be performed by the HARP2 simulator.
 Optionally to HARPSIM, one can use the HARP device that instructs the
 HardCloud to generate code for the real HARP instead of for the simulator. 

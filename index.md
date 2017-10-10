@@ -22,12 +22,12 @@ Here is a video demonstrating how to use the HardCloud for a pre-defined bitstre
   <iframe width="560" height="315" src="https://www.youtube.com/embed/r5GFYUj2ajA?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-The *device(HARPSIM)* clause indicates that the execution will be performed by the HARP2 simulator.
-Optionally to HARPSIM, one can use the HARP device that instructs the
-HardCloud to generate code for the real HARP instead of for the simulator.
-The *map(:to)* clause indicates the data that will be sent to the accelerator,
+As said in the video, the *map(:to)* clause indicates the data that will be sent to the accelerator,
 while the *map(:from)* indicates the data that will be received from the accelerator as a result. 
-The clause *use(hrw)* specifies that the annotated code block will use a pre-designed hardware module (loopback) to do the computation instead of the C code following the annotation.
+The clause *use(hrw)* specifies that the annotated code block will use a pre-designed hardware, for example
+module (loopback), to do the computation instead of the C code following the annotation. The *device(HARPSIM)* clause indicates that the execution will be performed by the HARP2 simulator.
+Optionally to HARPSIM, one can use the HARP device that instructs the
+HardCloud to generate code for the real HARP instead of for the simulator. 
 
 ### Using HardCloud to synthesize C and offload the resulting module
 

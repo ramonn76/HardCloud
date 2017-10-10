@@ -23,14 +23,14 @@ Here is a video demonstrating how to use the HardCloud for a pre-defined bitstre
 </div>
 
 {% highlight C %}				
-#pragma omp target device(HARPSIM) map(to: A) map(from: B)		
- #pragma omp parallel for use(hrw) module(loopback)		
-   // Code that represents the loopback bitstream		
-   for (int i = 0; i < NI; i++)		
-   {		
-     B[i] = A[i];		
+#pragma omp target device(HARPSIM) map(to: A) map(from: B)
+ #pragma omp parallel for use(hrw) module(loopback)
+ // Code that represents the loopback bitstream
+   for (int i = 0; i < NI; i++)
+   {
+     B[i] = A[i];
    }
-{% endhighlight %}
+   {% endhighlight %}
 
 The example above shows the syntax that was adopted. As said in the video, the *map(:to)* clause indicates
 the data that will be sent to the accelerator, while the *map(:from)* indicates the data that will be received from the accelerator as a result. The clause *use(hrw)* specifies that the annotated code block will use a pre-designed hardware, for example module (loopback), to do the computation instead of the C code following the annotation. The *device(HARPSIM)* clause indicates that the execution will be performed by the HARP2 simulator.

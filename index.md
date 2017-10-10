@@ -16,25 +16,18 @@ This can be done using two modes as described below: (1) Offloading a pre-synthe
 module; and (2) Using HardCloud to synthesize C and offload the resulting module.
 
 ### Offloading a pre-synthesized module
+Here is a video demonstrating how to use the HardCloud for a pre-defined bitstream..
 
-The following example shows the syntax that was adopted. The *device(HARPSIM)*
-clause indicates that the execution will be performed by the HARP2 emulator.
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/r5GFYUj2ajA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+The *device(HARPSIM)* clause indicates that the execution will be performed by the HARP2 emulator.
 Optionally to HARPSIM, one can use the HARP device that instructs the
 HardCloud to generate code for the real HARP instead of for the emulator.
 The *map(:to)* clause indicates the data that will be sent to the accelerator,
 while the *map(:from)* indicates the data that will be received from the accelerator as a result. 
 The clause *use(hrw)* specifies that the annotated code block will use a pre-designed hardware module (loopback) to do the computation instead of the C code following the annotation.
-{% highlight C %}
-
-  #pragma omp target device(HARPSIM) map(to: A) map(from: B)
-  #pragma omp parallel for use(hrw) module(loopback)
-  // Code that represents the loopback bitstream
-  for (int i = 0; i < NI; i++)
-  {
-    B[i] = A[i];
-  }
-
-{% endhighlight %}
 
 ### Using HardCloud to synthesize C and offload the resulting module
 
@@ -52,13 +45,8 @@ Instead of using the *module* clause, to specify a pre-designed hardware module,
         C[i * N + j] += A[i * N + k] * B[k * N + j];
     }
 {% endhighlight %}
-## Screencast Demo
 
-Here is a video demonstrating how to use the HardCloud for a pre-defined bitstream..
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/r5GFYUj2ajA?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
+This HardCloud operation mode is on-going work, and should be ready by late Nov. 2017.
 
 ## Documentation, Installation, Configuration
 

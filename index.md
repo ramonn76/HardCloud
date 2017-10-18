@@ -56,6 +56,13 @@ Instead of using the *module* clause, to specify a pre-designed hardware module,
 
 This HardCloud operation mode is on-going work, and should be ready by late Nov. 2017.
 
+## The 1st HardCloud Workshop
+
+*[HardCloud Tutorial](https://drive.google.com/file/d/0BwtIJD4CW5jfWlUyallEUXNWNGs3TW0wb21TdFJRY1REU2pv/view?usp=sharing).
+
+*[HardCloud Slides](https://omp2ocl.github.io/aclang).
+
+
 ## Documentation, Installation, Configuration
 
 All the information is provided [in the Wiki](https://github.com/omp2ocl/aclang/wiki).

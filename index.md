@@ -60,7 +60,7 @@ This HardCloud operation mode is on-going work, and should be ready by late Nov.
 
 *[HardCloud Tutorial](https://drive.google.com/file/d/0BwtIJD4CW5jfWlUyallEUXNWNGs3TW0wb21TdFJRY1REU2pv/view?usp=sharing).
 
-*[HardCloud Slides](https://drive.google.com/file/d/0BwtIJD4CW5jfSTB0OWZkWmdmOVljSW4zcXZKRjVXajJzV0JZ/view?usp=sharing).
+*[HardCloud Slides](https://drive.google.com/open?id=0BwtIJD4CW5jfY3V1M2V3cTUwazR6LTBURGdBdEZ3N2lEcWdJ).
 
 
 ## Documentation, Installation, Configuration

@@ -4,7 +4,7 @@ title: HardCloud
 permalink: /
 ---
 
-The computing industry has recently proposed the use of  FPGAs as a way to improve performance and energy efficiency in modern cloud clusters. Unfortunately, using such FPGA clusters  is a very hard and complex task. In this context, we present HardCloud a novel and simple mechanism to offload computation to  the FPGAs available in the  Intel HARP2 platform. HardCloud extends OpenMP directives in such a way that the FPGA becomes just another OpenMP acceleration device that can be used directly from any user program. HardCloud is a subproject of [AClang](https://omp2ocl.github.io/aclang).
+The computing industry has recently proposed the use of  FPGAs as a way to improve performance and energy efficiency in modern cloud clusters. Unfortunately, using such FPGA clusters  is a very hard and complex task. In this context, we present HardCloud a novel and simple mechanism to offload computation to  the FPGAs available in the  Intel HARP2 platform. HardCloud extends OpenMP directives in such a way that the FPGA becomes just another OpenMP acceleration device that can be used directly from any user program. -- HardCloud is a subproject of [AClang](https://omp2ocl.github.io/aclang).
 
 ## How it works
 
@@ -56,13 +56,13 @@ Instead of using the *module* clause, to specify a pre-designed hardware module,
 
 This HardCloud operation mode is on-going work, and should be ready by late Nov. 2017.
 
-## The 1st HardCloud Workshop
+-- ## The 1st HardCloud Workshop
 
-*[HardCloud Tutorial](https://drive.google.com/file/d/0BwtIJD4CW5jfWlUyallEUXNWNGs3TW0wb21TdFJRY1REU2pv/view?usp=sharing).
+--*[HardCloud Tutorial](https://drive.google.com/file/d/0BwtIJD4CW5jfWlUyallEUXNWNGs3TW0wb21TdFJRY1REU2pv/view?usp=sharing).
 
-*[HardCloud Slides](https://drive.google.com/open?id=0BwtIJD4CW5jfY3V1M2V3cTUwazR6LTBURGdBdEZ3N2lEcWdJ).
+-- *[HardCloud Slides](https://drive.google.com/open?id=0BwtIJD4CW5jfY3V1M2V3cTUwazR6LTBURGdBdEZ3N2lEcWdJ).
 
 
-## Documentation, Installation, Configuration
+-- ## Documentation, Installation, Configuration
 
-All the information is provided [in the Wiki](https://github.com/omp2ocl/aclang/wiki).
+-- All the information is provided [in the Wiki](https://github.com/omp2ocl/aclang/wiki).
